@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.correct {
+  background: cadetblue;
+  color: black;
+}
+
+.incorrect {
+  background: red;
+  color: black;
+}
+
+/* Main Section */
+
+.main-section {
+  min-height: -moz-calc(100vh - 136px);
+  min-height: -webkit-calc(100vh - 136px);
+  min-height: -o-calc(100vh - 136px);
+  min-height: calc(100vh - 136px);
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 30px;
+  margin-top: 40px;
+  border-radius: 7px;
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 30px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  border-radius: 7px;
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    padding: 50px 60px;
+  }
+}
+
+.option-box {
+  display: flex;
+  border-radius: 4px;
+  padding: 5px 10px;
+  align-items: center;
+  height: 40px;
+}
+
+.option-box-default {
+  background-color: burlywood;
+}
+
+.option-box-default p:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.option-box + .option-box {
+  margin-top: 25px;
+}
+
+.option-box p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.option-text {
+  margin-left: 15px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  height: 80px;
+}

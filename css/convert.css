@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Main Section */
+.main-section {
+  min-height: -moz-calc(100vh - 136px);
+  min-height: -webkit-calc(100vh - 136px);
+  min-height: -o-calc(100vh - 136px);
+  min-height: calc(100vh -136px);
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 30px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -130px;
+  margin-bottom: 40px;
+}
+
+.converter-card {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.converter-card select {
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.converter-card input {
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* Footer */
+
+footer {
+  height: 80px;
+}
